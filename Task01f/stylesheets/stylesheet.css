@@ -1,0 +1,245 @@
+/* Task01f:
+    Feature 0: linking external stylesheet
+    Feature 1: apply defined classes in stylesheet to html.
+    Feature 2: incorporate image into one or more CSS class
+    Feature 3: incorporate animation to the site
+    Feature 4: modify CSS template to show your sense of visual and organizational consistency.
+    Feature 5 (bonus): create new CSS class adding a new component (e.g., carousel, accordion, card, etc.)
+*/
+
+.animation{
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+    opacity: 0.8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Cambria, Georgia, Times, serif;
+    padding: 25px;
+    background:palevioletred;
+    color: #8a2c5a;
+    line-height: 1.6;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    height: 350px;
+    opacity: 0.8;
+    text-align: center;
+    background-image: url("assets/katya-guseva0-summer-5323538_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.header h1 {
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 4px #8a2c5a;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+    h2,h3{
+    font-family:Cambria, Georgia, Times, serif;
+    font-weight: bold;
+    color: #571535;
+}
+/* Style the top navigation bar */
+.topnav ul{
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 15px;
+    background-color: rgb(255, 222, 233);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border: 3px solid #620d3c;
+    border-radius: 15px;
+}
+
+/* Style the topnav links */
+.topnav a {
+    display: block;
+    border-radius: 8px;
+    color: #5b2148;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ffffff;
+    transform:translateY(-5px);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#d63384
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+/*Left for future use */
+
+.leftcolumn {
+    float: left;
+    width: 70%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 30%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+img {
+    border-radius:15px ;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #620d3c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: rgb(255, 231, 239);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border-style:solid;
+    border-color: #620d3c;
+    border-width: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+    display: flex;
+    gap:20px;
+    padding: 20px;
+    overflow-x: auto;
+    align-items: flex-start;
+    scrollbar-color: #620d3c #f1f1f1;
+    scrollbar-width: thin;
+    position: relative;
+}
+
+.carousel-item {
+    flex: 0 0 220px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.carousel-item p {
+    margin-top: 5px;
+    word-wrap: break-word
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #620d3c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-item img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Footer */
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: rgb(255, 222, 233);
+    border-radius: 15px;
+    border-color: #620d3c;
+    border-width: 3px;
+    border-style: solid;
+    margin-top: 20px;
+}
+
+button {
+    background: #620d3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(3px);
+    }
+}
+
+@media (max-width: 600px) {
+  /* Styles for buttons on smaller screens */
+  .button {
+    /* Adjust dimensions */
+    width: 100%;
+    height: 40px;
+
+    /* Modify font size */
+    font-size: 14px;
+
+    /* Change layout */
+    display: block;
+    margin-bottom: 10px;
+  }
+}

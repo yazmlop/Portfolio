@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--
+       This is a comment about the DOCTYPE, the html version of which should be specified.
+       The DOCTYPE in the line above specifies the HTML5 type.
+       For more see https://www.w3schools.com/tags/tag_doctype.asp
+-->
+
+<html lang="en">
+<!--
+       This is a comment about the language attribute. Here the language attribute is specified as having English as its value.
+       For more see https://www.w3.org/International/questions/qa-lang-why
+-->
+
+<head>
+    <title> INLS161-001 Summer 2026 Information Tools | Template </title>
+    <meta name="description" content="template page for INLS161-001 Summer 2026 Information Tools">
+    <meta name="keywords" content="information literacy, information tools, information, tasks, hard coding">
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href="../Task01f/stylesheets/stylesheet.css">
+    <script type ="text/javascript" src="../Task01g/script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <!-- Header -->
+        <!-- Feature 0: using appropriate heading tag (e.g., H1, H2, H3, etc.) to display header message -->
+         <!-- Below a sample to illustration -->
+         <h1 class="animation">Yazmin Lopez-Munoz</h1>
+         
+    </div>
+
+    <div class="topnav">
+        <!-- Navigation -->
+        <!-- Feature 1: include at minimum these 4 sections to navigate to: about me, classes, interests, and contact -->
+         <nav>
+             <ul>
+                 <li><a href="#about-me">About Me</a></li>
+                 <li><a href="#classes">Classes</a></li>
+                 <li><a href="#interests">Interests</a></li>
+                 <li><a href="#UNC">UNC</a></li>
+                 <li><a href="#contact">Contact</a></li>
+             </ul>
+         </nav>
+    </div>
+
+    <div ">
+        <!-- Content -->
+        <!-- Feature 2: include at minimum these 4 sections that corresponds to the sections denoted in the nav bar: about me, classes, interests, and contact -->
+        <!-- Feature 3: within one or more of the sections, practice using the html list elements (ordered or unordered) -->
+        <!-- Feature 4: where appropriate, use the anchor tag to link to your CV/resume -->
+        <!-- Feature 5: within one or more of the sections, practice using absolute reference anchor tags to link to external web page(s) -->
+        <!-- Feature 6: within one or more of the sections (or in the header/footer), practice using the image tags to display an image. Store related images in an assets folder for use later. -->
+        <!-- Feature 7: within each of the sections, practice using the paragraph tag(s) to display section content. Ensure site content is well written and copyedited -->
+
+        <section class="card" id="about-me">
+            <h2>About Me</h2>
+            <p>Hello! My name is Yazmin Lopez-Munoz, and I am a Computer Science student at UNC Chapel Hill.</p>
+            <p>You can check out my resume <a href="assets/Yazmin Lopez-Munoz Resume.pdf" target="_blank">right here!</a></p>
+        </section>
+
+        <section class="card" id="classes">
+            <h2>Classes</h2>
+            <p>As a Computer Science student, many of my classes will be COMP, MATH, and STOR. Recently, I have been interested in adding Statistics as my second major so I've take a few electives to explore that as well.</p>
+            <p>I am currently taking the following classes:</p>
+            <ul>
+            <li>INLS161-001: Information Tools (<a href="https://ils.unc.edu/~bergr/courses/2024-5_spring/inls161-001/s01.syllabus.html" target="_blank">
+            Course Website</a>)</li>
+            <li>ENGL140-001: Introduction to Gay and Lesbian Culture and Literature</li>
+            <li>EDUC111-002: Career Exploration</li>
+        </ul>
+
+        <p>In the Fall Semester I will be taking:</p>
+        <ul>
+            <li>COMP 211</li>
+            <li>COMP 301</li>
+            <li>MATH 232</li>
+            <li>STOR 320</li>
+        </ul>
+
+        <h3>Past Classes</h3>
+        <button onclick="myFunction()">Hide/Show</button>
+
+        <div id="myDIV">
+
+
+        <h4>Second Semester</h4>
+        <ul>
+            <li>COMP 210: Data Structures</li>
+            <li>COMP 283: Discrete Structures</li>
+            <p>Discrete Structures was overall very challenging, but it pushed me to make friends and connections, which I will forever be greatful for. I had a great study group that helped me through the tough parts.</p>
+            <li>IDST 112L: Death and Dying</li>
+            <p>Funnest class of the semester! This interdisciplinary course approached the topic of death through a psychological and anthropological lens.</p>
+            <li>STOR 155: Introduction to Data Models and Inference</li>
+        </ul>
+
+        <h4>First Semester</h4>
+
+        <ul>
+            <li>COMP 110: Introduction to Programming</li>
+            <p>UNC's introductory programming course. I struggled a bit as it had been a long time since I had done any programming, but I ended up learning a lot and having fun. This helped me decide if I wanted to pursue computer science further.</p>
+            <li>MATH 231: Calculus I</li>
+            <li>ENGL 105: English Composition and Rhetoric</li>
+            <li>GLBL 89: The Migratory Experience</li>
+            <li>IDST 101: College Thriving</li>
+            <li>IDST 111L: Data Literacy</li>
+        </ul>
+        </div>
+        </section>
+
+        <section class="card" id="interests">
+            <h2>Interests and Hobbies</h2>
+            <p>In this section, I will share some of my academic interests as well as my hobbies.</p>
+            <h3>Interests</h3>
+            <p>My interests include:</p>
+            <ul>
+            <li>Cybersecurity</li>
+            <li>Data Science</li>
+            <li>Web Development</li>
+        </ul>
+
+        <h3>Hobbies</h3>
+            <p>My hobbies include:</p>
+            <ul>
+                <li>Crocheting</li>
+                <li>Thrifting</li>
+                <li>Painting</li>
+            </ul>
+            <p> A little fun fact about me, I have been an instructor for Crochet Club since last semester!</p>
+
+        </section>
+
+        <section class="card" id="UNC">
+            <h2>UNC</h2>
+            <p>I am a student at the University of North Carolina at Chapel Hill. Here are some of my favorite memories, places, and people!</p>
+
+            <div class="carousel">
+
+                <div class="carousel-item">
+                    <img src="assets/rush2026.png" alt="Photo of Rushing Franklin" width="200">
+                    <p>Rushing Franklin</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/mrsmolly.png" alt="Photo of Mrs. Molly, a dog" width="200">
+                    <p>Hugs and Pups!</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/louisvillegame.png" alt="Photo of basketball game" width="200">
+                    <p>Finally getting Basketball tickets</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/mogeafterfinal.png" alt="Photo of me and Karolyn" width="200">
+                    <p>Eating out with my friends</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/marshallowfriends.png" alt="Photo of me and Krispy" width="200">
+                    <p>Meeting new people and making good friends</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="card" id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at <a href="mailto:yazmlop@unc.edu">yazmlop@unc.edu</a>.</p>
+            <p> Connect with me on <a href="https://www.linkedin.com/in/yazmin-lopez-munoz-148418282/" target="_blank">LinkedIn</a>.</p>
+        </section>
+
+    </div>
+
+
+
+    <!-- Footer -->
+        <!-- Feature 8: practice using the paragraph tag to display copyright information -->
+    <div id="footer" class="footer">
+        <footer>
+            <p> Copyright &copy; Yazmin Lopez-Munoz 2026. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
