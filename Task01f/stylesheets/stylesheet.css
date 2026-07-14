@@ -198,6 +198,13 @@ button {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.contact-form{
+    border: 3px solid #620d3c;
+    border-radius: 15px;
+    padding: 20px;
+    background: rgb(255, 231, 239);
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
     .leftcolumn,

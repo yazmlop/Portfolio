@@ -14,6 +14,13 @@ function insert_footer_last_modified(){
     footer.appendChild(last_modified);
 }
 
+document.addEventListener("DOMContentLoaded", (event) => {
+    insert_footer_last_modified();
+   
+});
+
+
+//Creates Hide/Show toggle button for past classes
 function myFunction() {
   var x = document.getElementById("myDIV");
   if (x.style.display === "none") {
@@ -23,7 +30,3 @@ function myFunction() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", (event) => {
-    insert_footer_last_modified();
-   
-});
