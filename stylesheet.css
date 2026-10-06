@@ -251,3 +251,10 @@ button {
     margin-bottom: 10px;
   }
 }
+
+/* Keep the original design usable on phones and with keyboard navigation. */
+.topnav ul { flex-wrap: wrap; }
+.contact-form { width: 100%; max-width: 640px; }
+a:focus-visible, button:focus-visible { outline: 3px solid #571535; outline-offset: 4px; }
+@media (max-width: 600px) { body { padding: 12px; margin: 0; } .header { height: 240px; padding: 18px; } .header h1 { font-size: clamp(30px, 8vw, 48px); } .topnav ul { gap: 4px; } .topnav a { padding: 10px; } .card { padding: 15px; } .contact-form { padding: 0; } }
+@media (prefers-reduced-motion: reduce) { .animation { animation: none; } img, button { transition: none; } }
